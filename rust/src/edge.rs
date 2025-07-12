@@ -288,6 +288,8 @@ impl SeleniumManager for EdgeManager {
             } else {
                 "mac64"
             }
+        } else if LINUX.is(os) && ARM64.is(arch) {
+            panic!("Linux arm64 is not supported yet by Microsoft Edge. Please try another browser.")
         } else {
             "linux64"
         };
@@ -354,6 +356,8 @@ impl SeleniumManager for EdgeManager {
             } else {
                 "mac64"
             }
+        } else if LINUX.is(os) && ARM64.is(arch) {
+            panic!("Linux arm64 is not supported yet by Microsoft Edge. Please try another browser.")
         } else {
             "linux64"
         }
